@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1422" height="800" viewBox="0 0 1422 800">
+    <path fill="url(#rrreplicate-pattern1)" d="M-711 -400H2133V1200H-711z"></path>
+    <path fill="url(#rrreplicate-pattern2)" d="M-711 -400H2133V1200H-711z"></path>
+    <path fill="url(#rrreplicate-pattern3)" d="M-711 -400H2133V1200H-711z"></path>
+    <path fill="url(#rrreplicate-pattern4)" d="M-711 -400H2133V1200H-711z"></path>
+    <defs>
+        <pattern id="rrreplicate-pattern1" width="260" height="260" fill="none" stroke="#7c8cce" strokeOpacity="0.48"
+            strokeWidth="4" patternTransform="rotate(30)" patternUnits="userSpaceOnUse">
+            <path d="M32.5 0L32.5 260"></path>
+            <path d="M97.5 0L97.5 260"></path>
+            <path d="M162.5 0L162.5 260"></path>
+            <path d="M227.5 0L227.5 260"></path>
+        </pattern>
+        <pattern id="rrreplicate-pattern2" width="260" height="260" fill="none" stroke="#238968" strokeOpacity="0.67"
+            strokeWidth="2.2" patternTransform="rotate(30)" patternUnits="userSpaceOnUse">
+            <path d="M65 0L65 260"></path>
+            <path d="M195 0L195 260"></path>
+        </pattern>
+        <pattern id="rrreplicate-pattern3" width="260" height="260" fill="none" stroke="#ffcb00" strokeOpacity="1"
+            strokeWidth="1.2" patternTransform="rotate(115)" patternUnits="userSpaceOnUse">
+            <path d="M32.5 0L32.5 260"></path>
+            <path d="M97.5 0L97.5 260"></path>
+            <path d="M162.5 0L162.5 260"></path>
+            <path d="M227.5 0L227.5 260"></path>
+        </pattern>
+        <pattern id="rrreplicate-pattern4" width="260" height="260" fill="none" stroke="#e42055" strokeOpacity="0.13"
+            strokeWidth="2.6" patternTransform="rotate(115)" patternUnits="userSpaceOnUse">
+            <path d="M65 0L65 260"></path>
+            <path d="M195 0L195 260"></path>
+        </pattern>
+    </defs>
+</svg>

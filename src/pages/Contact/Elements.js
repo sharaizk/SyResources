@@ -4,7 +4,7 @@ export const ScreenContainer = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden !important;
@@ -22,7 +22,6 @@ export const ContactContainer = styled.div`
   overflow-x: hidden;
   position: relative;
   flex-direction: column;
-  z-index: 2;
   background-color: ${(props) => props.theme.tertiary};
   @media screen and (max-width: 480px) {
     padding: 0 15px 1rem 15px;
@@ -37,7 +36,7 @@ export const StyledForm = styled(Form)`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 5% 20%;
+  padding: 2% 20%;
   flex-direction: column;
   & .bold {
     font-weight: 500;

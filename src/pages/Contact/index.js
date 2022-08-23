@@ -81,12 +81,6 @@ const Contact = () => {
       <BreadCrumb />
       <TopContainer>
         <Title>Contact Us</Title>
-        <p className="bold">
-          If you want to speak to us over the phone, please leave your details
-          and one of our experts will get in touch with you.
-        </p>
-        <br />
-        OR
         <p>You can contact us through following means:</p>
         <br />
         <CardDescriptio>
@@ -116,6 +110,16 @@ const Contact = () => {
           </Title2>
           <Description2>07576503089</Description2>
         </CardDescriptio>
+        <br />
+        <p>OR</p>
+        <br />
+
+        <p className="bold">
+          <b>
+            If you want to speak to us over the phone, please leave your details
+            and one of our experts will get in touch with you.
+          </b>
+        </p>
       </TopContainer>
       <ContactContainer>
         <FormikProvider value={formik}>

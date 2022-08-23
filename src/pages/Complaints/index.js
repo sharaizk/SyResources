@@ -8,7 +8,7 @@ import {
   ContactEmail,
   ContactTitle,
   Gap,
-  NavBtn
+  NavBtn,
 } from "./Elements";
 import BreadCrumb from "components/BreadCrumb";
 import ReactHTMLParser from "react-html-parser";
@@ -18,76 +18,77 @@ const Complaints = () => {
       id: 100,
       title: "Complaints Handling Procedure",
       description:
-        "It's our aim to give our clients an incredible experience. However, we know that sometimes things turn out badly and we strive to ensure they're put right straight away. Rn Marketing Solutions is focused on giving the highest levels of service to all of our customers. If you’ve any problem or feel our service didn't measure up to your expectations, please reach us. This will assist us with continually improving our service to you.",
-    },
-    {
-      id: 200,
-      title: "Step 1 – Making a complaint",
-      description:
-        "A complaint is any expression of dissatisfaction with the service received by us (Rn Marketing Solutions). In the event of a complaint, you should contact us immediately. You can contact us by any of the ways listed below:",
-      contact: [
-        {
-          id: 201,
-          title: "Phone",
-          detail: "01158883499",
-        },
-        {
-          id: 202,
-          title: "Email",
-          detail: "rnmarketing.solutions96@gmail.com",
-        },
-        {
-          id: 203,
-          title: "Post",
-          detail: "140B Queens Road, Beeston, Nottingham, NG9 2FF",
-        },
-      ],
-    },
-    {
-      id: 300,
-      title: "Step 2 - Acknowledgement of Complaint",
-      description:
-        "After receiving your complaint, within 3-5 business days of receiving your complaint, we will acknowledge it and we will provide you with a complaint reference number which you can give to check on the status of a dispute.",
-    },
-    {
-      id: 400,
-      title: "Step 3 - Investigating your Complaint",
-      description:
-        "We review any pre-sales calls or other forms of contact made to that specific contract in order to conduct an investigation into any miss-selling or contract-related complaints. If necessary, we could ask you for additional information or paperwork to make sure that all checks are complete.",
-    },
-    {
-      id: 500,
-      title: "Step 4 - Resolution of your complaint",
-      description:
-        "When all checks are finished, we will get in touch with you to let you know what we discovered. We will provide you with a resolution to your complaint. You will be able to accept or reject the resolution depending on whether you feel the resolution is fair.",
+        "We want to give our customers the best service possible and hope that they have a great experience with us. However, if there is ever an issue or something that you're not happy with, please follow the steps below so that we can fix the problem and make sure it doesn't happen again in the future. All complaints will be treated with courtesy and respect.<br /><b>Our Commitment:</b>",
       list: [
         {
-          id: 101,
-          list: "If you accept the resolution your complaint is resolved",
+          id: 110,
+          list: "The complaints handling process is designed to be fair and efficient, and to give all customers access to the process.",
         },
         {
-          id: 102,
-          list: "If you reject the resolution the complaint will be considered as 'deadlock'.",
+          id: 111,
+          list: "We will keep customers informed about the progress of their complaint and the expected resolution time. ",
+        },
+        {
+          id: 112,
+          list: "We will regularly review our complaints and procedures to ensure we are continuously improving.",
         },
       ],
       hasList: true,
     },
     {
-      id: 600,
-      title: "Step 5 - In Case of Deadlock",
-      description:
-        "If you reject the resolution and we haven't been able to sort things out within 8 weeks, or we can't agree on a way forward with you (we call this 'deadlock'), we'll write and let you know you have the right to refer your complaint to the Ombudsman. In this situation, you should wait until the allotted period has passed before referring your dispute to the Ombudsman for a free, unbiased investigation.",
+      id: 900,
+      title: "Steps to follow:",
     },
     {
-      id: 700,
-      title: "Step 6 - Contacting the Ombudsman",
+      id: 200,
+      title: "Step 1",
       description:
-        "If you feel we haven’t resolved your complaint after the first four steps, you can also get additional support to help evaluate your complaint from the Ombudsman Services: Energy (OSE).  You can get in touch with the OSE if eight weeks have passed since you first made the complaint to us or you‘ve received a ‘full and final position’ from us. This may be referred to as a deadlock and it outlines our final position in relation to your complaint.",
+        "We're always trying to resolve complaints as fast as possible. So, if you need to file a complaint, please get in touch with us through one of the following channels.",
+      contact: [
+        {
+          id: 201,
+          title: "Call us on",
+          detail: "07576503089",
+        },
+        {
+          id: 202,
+          title: "Email us at:",
+          detail: "syresourcesltd@gmail.com",
+        },
+        {
+          id: 203,
+          title: "Write to us:",
+          detail:
+            "SY RESOURCES LTD, 400 Roding Lane South, Woodford Green, IG8 8EY",
+        },
+      ],
+    },
+    {
+      id: 300,
+      title: "Step 2",
+      description:
+        "When a complaint is filed, we will send an acknowledgment of receipt within two business working days. Your complaint will be logged in our system, and we will do our best to resolve the problem within seven business days. We'll give you a reference number and reach out to you as soon as the issue has been resolved. If we haven’t resolved your complaint within seven business days, we’ll contact you to explain why and what the next stage is.<br/>We will keep in touch with the latest developments.",
+    },
+    {
+      id: 400,
+      title: "Step 3",
+      description:
+        "We will let you know the resolution of your complaint in writing, which might include an apology, making a goodwill gesture, or giving compensation. If you are happy with our resolution then your complaint will be closed or else if you are not happy and we have reached deadlock then you will need to follow step 4.",
+    },
+    {
+      id: 500,
+      title: "Step 4",
+      description:
+        "If you are unhappy with our final resolution, we have reached a deadlock, or it’s taking too long to resolve your complaint (8 weeks or more) then you are welcome to contact Ombudsman Services.",
+    },
+    {
+      id: 600,
+      description: "The Ombudsman Service ADR service is free of charge.",
     },
     {
       id: 800,
       description:
-        "You can contact the Ombudsman either by post, email, letter or complete the form online.",
+        "Ombudsman Services provides an alternative dispute resolution scheme (ADR Scheme) for those who are unhappy with final decisions, if we have reached a deadlock, or if the issue hasn't been resolved in 8 weeks. You can contact the Ombudsman either by post, email, or letter or complete the form online. You can contact the Ombudsman either by post, email, letter or complete the form online.",
       contact: [
         {
           id: 204,

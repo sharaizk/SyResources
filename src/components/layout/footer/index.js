@@ -24,14 +24,18 @@ const Footer = () => {
           <ContainerTitle>Company</ContainerTitle>
           <StyledLink to="/about">About Us</StyledLink>
           <StyledLink to="/faqs">FAQs </StyledLink>
-          <StyledLink to="/complaints-handling-procedure">Complaint Handling</StyledLink>
+          <StyledLink to="/complaints-handling-procedure">
+            Complaint Handling
+          </StyledLink>
         </LinksContainer>
         <LinksContainer>
           <ContainerTitle>Site Links</ContainerTitle>
           <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/about">About Us</StyledLink>
           <StyledLink to="/services">Services</StyledLink>
-          <StyledLink to="/complaints-handling-procedure">Complaints</StyledLink>
+          <StyledLink to="/complaints-handling-procedure">
+            Complaints
+          </StyledLink>
           <StyledLink to="/contact">Contact Us</StyledLink>
         </LinksContainer>
         <LinksContainer>
@@ -40,8 +44,8 @@ const Footer = () => {
             Address:
             <br />
             <span>
-              Rn Marketing Solutions Ltd, 140B Queens Road, Beeston, Nottingham,
-              NG9 2FF
+              Kilroy House, 400 Kilroy House, 400, Roding Lane South, Woodford
+              Green, England, IG8 8EY
             </span>
           </ContactLabel>
           <ContactLabel>
@@ -49,18 +53,18 @@ const Footer = () => {
             <br />
             <span>
               <a
-                href="mailto:rnmarketing.solutions96@gmail.com"
+                href="mailto:syresourcesltd@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                rnmarketing.solutions96@gmail.com
+                syresourcesltd@gmail.com
               </a>
             </span>
           </ContactLabel>
           <ContactLabel>
             Phone:
             <br />
-            <span>01158883499</span>
+            <span>07576503089</span>
           </ContactLabel>
         </LinksContainer>
       </SecondContainer>

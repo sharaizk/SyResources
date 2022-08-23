@@ -13,7 +13,7 @@ export const FooterContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    height: 80vh;
+    height: 100%;
   }
 `;
 

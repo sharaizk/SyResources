@@ -8,24 +8,21 @@ import {
   Error,
   TextArea,
   Submit,
-  CardContainer,
-  Card,
-  CardImage,
-  CardTitle,
+  Title,
+  TopContainer,
   CardDescriptio,
 } from "./Elements";
 import BreadCrumb from "components/BreadCrumb";
 import { useFormik, FormikProvider } from "formik";
-import loactionSvg from "assets/location.svg";
-import phoneSvg from "assets/phone.svg";
-import emailSvg from "assets/email.svg";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
-
 import * as Yup from "yup";
+import { GrMapLocation } from "react-icons/gr";
+import { MdCall, MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
   const form = useRef(null);
+
   const ContactSchema = Yup.object().shape({
     fullName: Yup.string().required("*What is your Full Name?"),
     email: Yup.string()
@@ -79,34 +76,34 @@ const Contact = () => {
   return (
     <ScreenContainer>
       <BreadCrumb />
-      <CardContainer>
-        <Card>
-          <CardImage src={emailSvg} />
-          <CardTitle>Email</CardTitle>
-          <CardDescriptio>
-            <a
-              href="mailto:rnmarketing.solutions96@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              rnmarketing.solutions96@gmail.com
-            </a>
-          </CardDescriptio>
-        </Card>
-        <Card>
-          <CardImage src={loactionSvg} />
-          <CardTitle>Location</CardTitle>
-          <CardDescriptio>
-            140B Queens Road, Beeston, Nottingham, NG9 2FF
-          </CardDescriptio>
-        </Card>
-        <Card>
-          <CardImage src={phoneSvg} />
-          <CardTitle>Phone</CardTitle>
-          <CardDescriptio>01158883499</CardDescriptio>
-        </Card>
-      </CardContainer>
-
+      <TopContainer>
+        <Title>Contact Us</Title>
+        <p className="bold">
+          If you want to speak to us over the phone, please leave your details
+          and one of our experts will get in touch with you.
+        </p>
+        <br />
+        OR
+        <p>You can contact us through following means:</p>
+        <br />
+        <CardDescriptio>
+          <GrMapLocation size={24} color="yellow" /> Address:{" "}
+          <b>
+            SY RESOURCES LTD, 400 Roding Lane South, Woodford Green, IG8 8EY
+          </b>
+        </CardDescriptio>
+        <br />
+        <CardDescriptio>
+          <MdCall size={24} />
+          Phone: <b>07576503089</b>
+        </CardDescriptio>
+        <br />
+        <CardDescriptio>
+          <MdOutlineEmail size={24} />
+          Email:{" "}
+          <a href="mailto:syresourcesltd@gmail.com">syresourcesltd@gmail.com</a>
+        </CardDescriptio>
+      </TopContainer>
       <ContactContainer>
         <FormikProvider value={formik}>
           <StyledForm
@@ -115,10 +112,6 @@ const Contact = () => {
             onSubmit={handleSubmit}
             ref={form}
           >
-            <p className="bold">
-              If you want to speak to us over the phone, please leave your
-              details and one of our experts will get in touch with you.
-            </p>
             <InputLabel>Full Name:</InputLabel>
             <Input
               type="text"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="none" version="1.1" viewBox="0 0 1440 560" xmlns="http://www.w3.org/2000/svg">
+<g mask="url(#a)">
+<path d="M0 0L299.15 0L0 163.28z" fill="rgba(255, 255, 255, .1)"/>
+<path d="m0 163.28 299.15-163.28h490.66l-789.81 204.67z" fill="rgba(255, 255, 255, .075)"/>
+<path d="m0 204.67 789.81-204.67h310.35l-1100.2 229.25z" fill="rgba(255, 255, 255, .05)"/>
+<path d="m0 229.25 1100.2-229.25h114.55l-1214.7 232.8z" fill="rgba(255, 255, 255, .025)"/>
+<path d="m1440 560h-78.01l78.01-1.4z" fill="rgba(0, 0, 0, .1)"/>
+<path d="m1440 558.6-78.01 1.4h-603.11l681.12-196.91z" fill="rgba(0, 0, 0, .075)"/>
+<path d="m1440 363.09-681.12 196.91h-66.41l747.53-423.7z" fill="rgba(0, 0, 0, .05)"/>
+<path d="m1440 136.3-747.53 423.7h-393.13l1140.7-503.68z" fill="rgba(0, 0, 0, .025)"/>
+</g>
+<defs>
+<mask id="a">
+<rect width="1440" height="560" fill="#fff"/>
+</mask>
+</defs>
+</svg>

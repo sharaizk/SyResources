@@ -8,6 +8,7 @@ export const ScreenContainer = styled.div`
   align-items: center;
   flex-direction: column;
   overflow-x: hidden !important;
+  background-color: ${(props) => props.theme.tertiary};
 `;
 
 export const ContactContainer = styled.div`
@@ -20,8 +21,8 @@ export const ContactContainer = styled.div`
   align-items: center;
   overflow-x: hidden;
   position: relative;
-  z-index: 2;
   flex-direction: column;
+  z-index: 2;
   background-color: ${(props) => props.theme.tertiary};
   @media screen and (max-width: 480px) {
     padding: 0 15px 1rem 15px;
@@ -42,19 +43,19 @@ export const StyledForm = styled(Form)`
     font-weight: 500;
   }
   @media (max-width: 860px) {
-    padding: 30px 0;
+    padding: 30px 1rem;
   }
 `;
 
 export const InputLabel = styled.label`
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-top: 2vh;
 `;
 export const Input = styled.input`
   width: 100%;
   padding: 1%;
   outline: none;
-  border-radius: 14px;
+  border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.25);
 `;
 export const Error = styled.label`
@@ -67,14 +68,14 @@ export const TextArea = styled.textarea`
   width: 100%;
   padding: 1%;
   outline: none;
-  border-radius: 14px;
+  border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.25);
 `;
 
 export const Submit = styled.button`
   outline: none;
   border: none;
-  border-radius: 24px;
+  border-radius: 8px;
   width: 100%;
   margin-top: 2vh;
   padding: 1rem 2rem;
@@ -134,9 +135,15 @@ export const CardTitle = styled.h3`
 
 export const CardDescriptio = styled.p`
   text-align: center;
-  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & svg {
+    margin-right: 1rem;
+  }
   & a {
     text-decoration: none;
+    font-weight: bold;
     color: ${(props) => props.theme.secondary};
   }
 `;
@@ -155,4 +162,21 @@ export const HeroTitle = styled.h2`
   @media screen and (max-width: 480px) {
     font-size: 2.25rem;
   }
+`;
+
+export const TopContainer = styled.div`
+  height: 100%;
+  width: 100vw;
+  padding: 5% 20% 0 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  @media (max-width: 860px) {
+    padding: 30px 1rem;
+  }
+`;
+
+export const Title = styled.h1`
+  text-align: start;
 `;

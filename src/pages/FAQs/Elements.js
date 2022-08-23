@@ -21,6 +21,8 @@ export const FAQsContainer = styled.div`
   overflow-x: hidden;
   position: relative;
   z-index: 2;
+  margin: 5vh 0;
+
   background-color: ${(props) => props.theme.tertiary};
   @media screen and (max-width: 768px) {
     flex-direction: column;

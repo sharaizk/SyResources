@@ -19,7 +19,7 @@ export const CurrentTitle = styled.h1`
   text-transform: uppercase;
   font-size: 2rem;
   @media screen and (max-width: 1200px) {
-    font-size: calc(1.575rem + 3.3vw);
+    font-size: calc(1.575rem + 1vw);
     text-align: center;
   }
 `;

@@ -12,9 +12,7 @@ function withRouter(Component) {
 }
 class LoadTop extends Component {
   componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0);
-    }
+    window.scrollTo(0, 0);
   }
   render() {
     return <React.Fragment />;

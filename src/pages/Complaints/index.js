@@ -12,6 +12,7 @@ import {
 } from "./Elements";
 import BreadCrumb from "components/BreadCrumb";
 import ReactHTMLParser from "react-html-parser";
+import { Fade } from "react-reveal";
 const Complaints = () => {
   const complainPolicy = [
     {
@@ -134,15 +135,21 @@ const Complaints = () => {
         {complainPolicy.map((pdf) => {
           return (
             <React.Fragment key={pdf.id}>
-              <Title>{pdf.title}</Title>
-              <Description>{ReactHTMLParser(pdf.description)}</Description>
-              {pdf?.hasList && (
-                <ListContainer>
-                  {pdf?.list?.map((list) => (
-                    <List key={list.id}>{list.list}</List>
-                  ))}
-                </ListContainer>
-              )}
+              <Fade left>
+                <Title>{pdf.title}</Title>
+              </Fade>
+              <Fade left>
+                <Description>{ReactHTMLParser(pdf.description)}</Description>
+              </Fade>
+              <Fade left>
+                {pdf?.hasList && (
+                  <ListContainer>
+                    {pdf?.list?.map((list) => (
+                      <List key={list.id}>{list.list}</List>
+                    ))}
+                  </ListContainer>
+                )}
+              </Fade>
               {pdf?.contact?.map((cont) => {
                 const baseHref =
                   cont?.title === "Email" || cont?.title === "Email us at:"
@@ -156,17 +163,21 @@ const Complaints = () => {
                     {cont?.title !== "Email" &&
                     cont?.title !== "Email us at:" &&
                     cont?.title !== "Online" ? (
-                      <ContactTitle for={cont.title}>
-                        {cont.title} : {cont.detail}
-                      </ContactTitle>
+                      <Fade left>
+                        <ContactTitle for={cont.title}>
+                          {cont.title} : {cont.detail}
+                        </ContactTitle>
+                      </Fade>
                     ) : (
-                      <ContactEmail
-                        href={`${baseHref}${cont?.detail}`}
-                        target="_blank"
-                      >
-                        {onlineTitle}
-                        {cont?.detail}
-                      </ContactEmail>
+                      <Fade left>
+                        <ContactEmail
+                          href={`${baseHref}${cont?.detail}`}
+                          target="_blank"
+                        >
+                          {onlineTitle}
+                          {cont?.detail}
+                        </ContactEmail>
+                      </Fade>
                     )}
                   </React.Fragment>
                 );
@@ -175,8 +186,10 @@ const Complaints = () => {
             </React.Fragment>
           );
         })}
-        <Title>If you have any complaint, please contact us</Title>
-        <NavBtn to="/contact">Contact Us</NavBtn>
+        <Fade left>
+          <Title>If you have any complaint, please contact us</Title>
+        </Fade>
+          <NavBtn to="/contact">Contact Us</NavBtn>
       </PDFConatiner>
     </>
   );

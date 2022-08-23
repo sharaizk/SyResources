@@ -8,7 +8,6 @@ export const PDFConatiner = styled.div`
   flex-direction: column;
   padding: 0% 10% 5% 10%;
   overflow-x: hidden !important;
-
 `;
 
 export const Title = styled.h3``;
@@ -27,19 +26,18 @@ export const List = styled.li`
 `;
 
 export const ContactTitle = styled.label`
-  color: ${props=>props.theme.primary};
+  color: ${(props) => props.theme.primary};
 `;
 export const ContactEmail = styled.a`
   color: #7c9fda;
-  color: ${props=>props.theme.primary};
+  color: ${(props) => props.theme.primary};
   text-decoration: none !important;
-
 `;
 
-export const Gap=styled.div`
-width: 100%;
-margin-bottom: 4vh;
-`
+export const Gap = styled.div`
+  width: 100%;
+  margin-bottom: 4vh;
+`;
 
 export const NavBtn = styled(NavLink)`
   cursor: pointer;

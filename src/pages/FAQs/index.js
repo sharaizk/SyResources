@@ -14,7 +14,7 @@ const FAQs = () => {
       {
         title: "How does an energy broker get paid?",
         content:
-          "The majority of brokers, including Pay4less Energy use a commission-based payment method. This means that the supplier offers you a small uplift in the form of a unit rate which will be paid to the broker. For example, your unit rate is 30p and broker add 1p uplift in it then the final unit rate will be 31p",
+          "The majority of brokers, including SY Resources use a commission-based payment method. This means that the supplier offers you a small uplift in the form of a unit rate which will be paid to the broker. For example, your unit rate is 30p and broker add 1p uplift in it then the final unit rate will be 31p",
       },
       {
         title: "What is an LOA?",

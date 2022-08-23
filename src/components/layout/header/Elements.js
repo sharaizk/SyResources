@@ -29,6 +29,17 @@ export const Navbar = styled.div`
   }
 `;
 
+export const BannerContainer = styled(NavLink)`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: ${(props) => props.theme.secondary};
+  font-size:1.5rem;
+`;
+
 export const NavBanner = styled.img`
   display: flex;
   justify-content: center;

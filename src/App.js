@@ -6,12 +6,14 @@ import Footer from "components/layout/footer";
 import { theme } from "./theme";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoadTop from "components/LoadTop";
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
       <Router />
       <Footer />
+      <LoadTop />
       <ToastContainer
         position="bottom-center"
         autoClose={5000}

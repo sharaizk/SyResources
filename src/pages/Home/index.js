@@ -48,11 +48,7 @@ const Home = () => {
           <HeroTitle clr={theme.secondary}>Our Collaborators</HeroTitle>
         </LeftSection>
         <RightSection flex="0.3">
-          {/* <Fade bottom> */}
-          {/* <CollaboratorsContainer> */}
           <ClientSlider />
-          {/* </CollaboratorsContainer> */}
-          {/* </Fade> */}
         </RightSection>
       </Section3Container>
       <Section2Container>

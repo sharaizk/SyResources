@@ -8,7 +8,7 @@ import {
   SecondContainer,
   Logo,
 } from "./Element";
-import logo from "assets/logo2.png";
+import logo from "assets/logos/logo2.png";
 
 const Footer = () => {
   return (
@@ -16,27 +16,19 @@ const Footer = () => {
       <SecondContainer>
         <LinksContainer>
           <Logo src={logo} alt="logo" />
-          <ContactLabel>
-            <span>All Rights Reserved</span>
-          </ContactLabel>
         </LinksContainer>
         <LinksContainer>
           <ContainerTitle>Company</ContainerTitle>
           <StyledLink to="/about">About Us</StyledLink>
-          <StyledLink to="/faqs">FAQs </StyledLink>
-          <StyledLink to="/complaints-handling-procedure">
-            Complaint Handling
-          </StyledLink>
+          <StyledLink to="/services">Services </StyledLink>
+          <StyledLink to="/contact">Contact Us</StyledLink>
         </LinksContainer>
         <LinksContainer>
           <ContainerTitle>Site Links</ContainerTitle>
-          <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="/about">About Us</StyledLink>
-          <StyledLink to="/services">Services</StyledLink>
           <StyledLink to="/complaints-handling-procedure">
-            Complaints
+            ComplaintsHandlingProcedure
           </StyledLink>
-          <StyledLink to="/contact">Contact Us</StyledLink>
+          <StyledLink to="/faqs">FAQs</StyledLink>
         </LinksContainer>
         <LinksContainer>
           <ContainerTitle>Contact Us</ContainerTitle>

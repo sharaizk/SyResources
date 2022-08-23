@@ -36,14 +36,6 @@ const Services = () => {
                 or issues that come up. We constantly monitor the wholesale
                 markets so that we can recommend the best time to renew your
                 contracts.
-                <br />
-                When it comes to energy contracts, it's all about getting the
-                best deal possible. But that can take a lot of time and effort.
-                And sometimes it's just not worth it if it means you're not
-                focusing on other, more critical matters. That's where we come
-                in. We can help you get the same savings without using up all
-                your resources. So, you can feel confident that you're always
-                getting the best deal, without having to worry about it.
               </Description>
             </DetailContainer>
           </Fade>

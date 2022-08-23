@@ -7,14 +7,18 @@ import {
   NavLinks,
   MobileIcon,
   Navbar,
+  BannerContainer,
 } from "./Elements";
 import Hamburger from "hamburger-react";
-import logoSet1 from "assets/logo1.png";
+import logoSet1 from "assets/logos/logo1.png";
 const Nav = ({ isOpen, toggle }) => {
   return (
     <NavbarContainer>
       <Navbar>
-        <NavBanner src={logoSet1} alt="logo" />
+        <BannerContainer to="/">
+          <NavBanner src={logoSet1} alt="logo" />
+          <p>SY Resources</p>
+        </BannerContainer>
         <MobileIcon>
           <Hamburger size={25} toggled={isOpen} toggle={toggle} />
         </MobileIcon>

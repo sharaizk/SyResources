@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 // import Slider from "react-slick";
 import styled from "styled-components";
 // Assets
@@ -16,7 +16,6 @@ import logo11 from "assets/companies/logo11.png";
 import logo13 from "assets/companies/logo13.png";
 import logo14 from "assets/companies/logo14.png";
 import logo15 from "assets/companies/logo15.png";
-import logo16 from "assets/companies/logo16.png";
 import Carousel from "react-elastic-carousel";
 export default function ClientSlider() {
   const breakPoints = [
@@ -27,6 +26,21 @@ export default function ClientSlider() {
     { width: 1450, itemsToShow: 6 },
     { width: 1750, itemsToShow: 6 },
   ];
+  const carouselRef = useRef(null);
+  const onNextStart = (currentItem, nextItem) => {
+    console.log(currentItem, nextItem);
+    if (currentItem.index === nextItem.index) {
+      // we hit the last item, go to first item
+      carouselRef.current.goTo(0);
+    }
+  };
+
+  const onPrevStart = (currentItem, nextItem) => {
+    if (currentItem.index === nextItem.index) {
+      // we hit the first item, go to last item
+      carouselRef.current.goTo(13);
+    }
+  };
   return (
     <Carousel
       renderArrow={() => <></>}
@@ -35,6 +49,9 @@ export default function ClientSlider() {
       enableAutoPlay
       autoPlaySpeed={2000}
       transitionMs={700}
+      ref={carouselRef}
+      onNextStart={onNextStart}
+      onPrevStart={onPrevStart}
     >
       <LogoWrapper>
         <ImgStyle src={logo1} $size={"60%"} alt="client logo" />
@@ -77,9 +94,6 @@ export default function ClientSlider() {
       </LogoWrapper>
       <LogoWrapper>
         <ImgStyle src={logo15} $size={"60%"} alt="client logo" />
-      </LogoWrapper>
-      <LogoWrapper>
-        <ImgStyle src={logo16} alt="client logo" />
       </LogoWrapper>
     </Carousel>
   );

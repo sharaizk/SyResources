@@ -11,18 +11,21 @@ import {
   Title,
   TopContainer,
   CardDescriptio,
+  Title2,
+  Description2,
 } from "./Elements";
 import BreadCrumb from "components/BreadCrumb";
 import { useFormik, FormikProvider } from "formik";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 import * as Yup from "yup";
+import { useTheme } from "styled-components";
 import { GrMapLocation } from "react-icons/gr";
 import { MdCall, MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
   const form = useRef(null);
-
+  const theme = useTheme();
   const ContactSchema = Yup.object().shape({
     fullName: Yup.string().required("*What is your Full Name?"),
     email: Yup.string()
@@ -47,10 +50,10 @@ const Contact = () => {
       const loadingToast = toast.loading("Sending your message");
       try {
         await emailjs.sendForm(
-          "service_7049t0a",
-          "template_05yw90t",
+          "service_0o1ie67",
+          "template_ph8d5fd",
           form.current,
-          "XwbDQm3Lekkjh80AQ"
+          "86tt7rjhfMyKELyVP"
         );
         toast.update(loadingToast, {
           render: "Thank You, you will hear from us soon.",
@@ -87,21 +90,31 @@ const Contact = () => {
         <p>You can contact us through following means:</p>
         <br />
         <CardDescriptio>
-          <GrMapLocation size={24} color="yellow" /> Address:{" "}
-          <b>
-            SY RESOURCES LTD, 400 Roding Lane South, Woodford Green, IG8 8EY
-          </b>
+          <Title2>
+            <GrMapLocation size={24} color={theme.primary} /> Address:
+          </Title2>
+          <Description2>
+            Kilroy House, 400 Kilroy House, 400, Roding Lane South, Woodford
+            Green, England, IG8 8EY
+          </Description2>
         </CardDescriptio>
         <br />
         <CardDescriptio>
-          <MdCall size={24} />
-          Phone: <b>07576503089</b>
+          <Title2>
+            <MdOutlineEmail size={24} /> Email:
+          </Title2>
+          <Description2>
+            <a href="mailto:syresourcesltd@gmail.com">
+              syresourcesltd@gmail.com
+            </a>
+          </Description2>
         </CardDescriptio>
         <br />
         <CardDescriptio>
-          <MdOutlineEmail size={24} />
-          Email:{" "}
-          <a href="mailto:syresourcesltd@gmail.com">syresourcesltd@gmail.com</a>
+          <Title2>
+            <MdCall size={24} /> Phone:
+          </Title2>
+          <Description2>07576503089</Description2>
         </CardDescriptio>
       </TopContainer>
       <ContactContainer>

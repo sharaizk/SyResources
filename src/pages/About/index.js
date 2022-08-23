@@ -63,8 +63,16 @@ const About = () => {
           </Fade>
         </Col>
       </Row>
-      <Row flexDirection="column">
-        <Col flex={1} flexDirection="column">
+      <Row flexDirection="row">
+        <Col flex={0.3} flexDirection="column">
+          <Fade left>
+            <Image
+              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+              alt="energy know how"
+            />
+          </Fade>
+        </Col>
+        <Col flex={0.6} flexDirection="column">
           <Fade left>
             <Title>Full of energy know-how</Title>
             <Description textAlign="center">

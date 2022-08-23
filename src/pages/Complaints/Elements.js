@@ -32,6 +32,7 @@ export const ContactTitle = styled.label`
 export const ContactEmail = styled.a`
   color: #7c9fda;
   color: ${props=>props.theme.primary};
+  text-decoration: none !important;
 
 `;
 

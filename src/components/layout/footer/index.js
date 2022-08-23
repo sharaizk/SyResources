@@ -26,7 +26,7 @@ const Footer = () => {
         <LinksContainer>
           <ContainerTitle>Site Links</ContainerTitle>
           <StyledLink to="/complaints-handling-procedure">
-            ComplaintsHandlingProcedure
+            Complaints Handling Procedure
           </StyledLink>
           <StyledLink to="/faqs">FAQs</StyledLink>
         </LinksContainer>

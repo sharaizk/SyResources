@@ -133,17 +133,17 @@ export const CardTitle = styled.h3`
   margin-top: 2vh;
 `;
 
-export const CardDescriptio = styled.p`
+export const CardDescriptio = styled.div`
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   & svg {
     margin-right: 1rem;
   }
   & a {
     text-decoration: none;
-    font-weight: bold;
     color: ${(props) => props.theme.secondary};
   }
 `;
@@ -178,5 +178,17 @@ export const TopContainer = styled.div`
 `;
 
 export const Title = styled.h1`
+  text-align: start;
+`;
+
+export const Title2 = styled.h3`
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Description2 = styled.p`
+  margin-top: 1vh;
   text-align: start;
 `;

@@ -144,13 +144,18 @@ const Complaints = () => {
                 </ListContainer>
               )}
               {pdf?.contact?.map((cont) => {
-                const baseHref = cont?.title === "Email" ? "mailto://" : "";
+                const baseHref =
+                  cont?.title === "Email" || cont?.title === "Email us at:"
+                    ? "mailto://"
+                    : "";
                 const onlineTitle = cont?.isTitleHidden
                   ? ""
                   : `${cont?.title} : `;
                 return (
                   <React.Fragment key={cont.id}>
-                    {cont?.title !== "Email" && cont?.title !== "Online" ? (
+                    {cont?.title !== "Email" &&
+                    cont?.title !== "Email us at:" &&
+                    cont?.title !== "Online" ? (
                       <ContactTitle for={cont.title}>
                         {cont.title} : {cont.detail}
                       </ContactTitle>

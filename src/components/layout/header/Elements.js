@@ -31,7 +31,7 @@ export const Navbar = styled.div`
 
 export const BannerContainer = styled(NavLink)`
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: flex-start;
   align-items: center;

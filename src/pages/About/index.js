@@ -72,10 +72,10 @@ const About = () => {
             />
           </Fade>
         </Col>
-        <Col flex={0.6} flexDirection="column">
+        <Col flex={0.65} flexDirection="column">
           <Fade left>
             <Title>Full of energy know-how</Title>
-            <Description textAlign="center">
+            <Description textAlign="start">
               At our company, you will be working with a team of experts from
               day one. This ensures that you will have access to the best
               resources and knowledge from the start. We have experience with

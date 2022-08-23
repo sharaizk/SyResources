@@ -33,7 +33,7 @@ const Home = () => {
             </HeroTitle>
             <HeroDescription>{ReactHTMLParser(description)}</HeroDescription>
 
-            <Button to="/about">Learn More About Us</Button>
+            <Button to="/about">Let's get started</Button>
           </Fade>
         </LeftSection>
 

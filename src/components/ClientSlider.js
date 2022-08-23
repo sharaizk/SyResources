@@ -20,38 +20,37 @@ import Carousel from "react-elastic-carousel";
 export default function ClientSlider() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+    { width: 550, itemsToShow: 2, itemsToScroll: 1, pagination: false },
     { width: 850, itemsToShow: 3 },
-    { width: 1150, itemsToShow: 5, itemsToScroll: 2 },
+    { width: 1150, itemsToShow: 5, itemsToScroll: 1 },
     { width: 1450, itemsToShow: 6 },
     { width: 1750, itemsToShow: 6 },
   ];
   const carouselRef = useRef(null);
-  const onNextStart = (currentItem, nextItem) => {
-    console.log(currentItem, nextItem);
-    if (currentItem.index === nextItem.index) {
-      // we hit the last item, go to first item
-      carouselRef.current.goTo(0);
-    }
-  };
-
-  const onPrevStart = (currentItem, nextItem) => {
-    if (currentItem.index === nextItem.index) {
-      // we hit the first item, go to last item
-      carouselRef.current.goTo(13);
-    }
-  };
+  let timeout;
   return (
     <Carousel
-      renderArrow={() => <></>}
+      showArrows={false}
       pagination={false}
       breakPoints={breakPoints}
       enableAutoPlay
       autoPlaySpeed={2000}
       transitionMs={700}
       ref={carouselRef}
-      onNextStart={onNextStart}
-      onPrevStart={onPrevStart}
+      onChange={() => {
+        clearTimeout(timeout);
+        if (
+          carouselRef?.current?.state.activePage + 1 ===
+          carouselRef?.current?.getNumOfPages()
+        ) {
+          timeout = setTimeout(() => {
+            carouselRef?.current?.goTo(0);
+            clearTimeout(timeout);
+          }, 2500);
+          return;
+        }
+        clearTimeout(timeout);
+      }}
     >
       <LogoWrapper>
         <ImgStyle src={logo1} $size={"60%"} alt="client logo" />

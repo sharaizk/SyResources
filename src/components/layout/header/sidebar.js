@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             onClick={() => {
               toggle();
             }}
-            to="/home"
+            to="/"
           >
             Home
           </SidebarLink>
@@ -41,12 +41,12 @@ const Sidebar = ({ isOpen, toggle }) => {
         </NavItem>
         <NavItem>
           <SidebarLink
-            to="/services"
+            to="/faqs"
             onClick={() => {
               toggle();
             }}
           >
-            Services
+            FAQs
           </SidebarLink>
         </NavItem>
         <NavItem>
